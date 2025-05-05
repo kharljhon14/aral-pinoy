@@ -10,7 +10,7 @@ export default function Header() {
       >
         Aral Pinoy
       </Link>
-      <nav className="ml-auto mr-12 flex flex-row gap-x-6">
+      <nav className=" flex flex-row gap-x-6">
         <Link to="/">Home</Link>
         <Link to="/">Services</Link>
         <Link to="/">Testimonials</Link>
