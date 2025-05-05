@@ -1,4 +1,5 @@
 import Hero from '@/features/home/hero';
+import Stats from '@/features/home/stats';
 import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/')({
@@ -9,6 +10,7 @@ function RouteComponent() {
   return (
     <>
       <Hero />
+      <Stats />
     </>
   );
 }
