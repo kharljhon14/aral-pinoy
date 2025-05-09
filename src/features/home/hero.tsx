@@ -3,9 +3,9 @@ import { Link } from '@tanstack/react-router';
 
 export default function Hero() {
   return (
-    <div className="bg-white rounded-xl py-16 px-24">
+    <div className="bg-white rounded-xl lg:py-16 lg:px-24 px-12 py-10">
       <div className="flex flex-col items-center justify-center text-center max-w-5xl mx-auto gap-y-4">
-        <h1 className="text-5xl leading-16 font-bold">
+        <h1 className="lg:text-5xl text-2xl lg:leading-16 font-bold">
           READY TO LEVEL UP YOUR LEARNING JOURNEY? STAND OUT IN SCHOOL, WORK, AND BEYOND!
         </h1>
         <p className="max-w-2xl">
@@ -15,7 +15,7 @@ export default function Hero() {
         </p>
       </div>
 
-      <div className="flex items-center justify-center gap-4 my-24">
+      <div className="flex items-center justify-center gap-4 lg:my-24 my-10">
         <Button size="lg">Get Started</Button>
         <Link to="/">Watch Video</Link>
       </div>
