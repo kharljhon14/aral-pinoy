@@ -6,17 +6,17 @@ export default function Partners() {
       </h2>
       <div className="flex flex-col md:flex-row gap-10 items-center justify-around">
         <img
-          className="w-32 h-32"
+          className="w-24 h-24"
           src="deped.png"
           alt="Deped logo"
         />
         <img
-          className="w-32 h-32"
+          className="w-24 h-24"
           src="dict.png"
           alt="DICT logo"
         />
         <img
-          className="w-32 h-32"
+          className="w-24 h-24"
           src="tesda.png"
           alt="Tesda logo"
         />
