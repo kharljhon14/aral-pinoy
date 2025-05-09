@@ -1,6 +1,7 @@
 import ChooseUs from '@/features/home/choose-us';
 import Features from '@/features/home/features';
 import Hero from '@/features/home/hero';
+import Partners from '@/features/home/partners';
 import Stats from '@/features/home/stats';
 import Testimonial from '@/features/home/testimonial';
 import { createFileRoute } from '@tanstack/react-router';
@@ -19,6 +20,7 @@ function RouteComponent() {
         <ChooseUs />
         <Testimonial />
       </div>
+      <Partners />
     </>
   );
 }
