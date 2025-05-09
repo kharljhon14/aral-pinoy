@@ -16,14 +16,14 @@ export default function Header() {
           >
             Aral Pinoy
           </Link>
-          <nav className="hidden flex-row gap-x-6">
+          <nav className="hidden lg:flex flex-row gap-x-6">
             <Link to="/">Home</Link>
             <Link to="/">Services</Link>
             <Link to="/">Testimonials</Link>
             <Link to="/">About Us</Link>
             <Link to="/">Blog</Link>
           </nav>
-          <div className="hidden">
+          <div className="hidden lg:flex">
             <Link
               className={buttonVariants({ variant: 'default' })}
               to="/"
@@ -32,7 +32,7 @@ export default function Header() {
             </Link>
           </div>
 
-          <div className="lg-hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               className="cursor-pointer"
               onClick={() => setShowMobileMenu(!showMobileMenu)}
@@ -45,7 +45,7 @@ export default function Header() {
         <div
           className={`${
             showMobileMenu ? 'py-6 h-80 border-t mt-8' : 'py-0 h-0'
-          }  overflow-hidden transition-all duration-300`}
+          }  overflow-hidden transition-all duration-300 lg:hidden`}
         >
           <nav className="flex flex-col text-lg items-center justify-center gap-y-4">
             <Link to="/">Home</Link>
