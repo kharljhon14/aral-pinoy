@@ -1,6 +1,17 @@
+import { motion } from 'motion/react';
+
 export default function Partners() {
   return (
-    <div className="bg-white rounded-xl lg:py-16 lg:px-24 p-8">
+    <motion.div
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.8,
+        scale: { type: 'spring', visualDuration: 0.4, bounce: 0.2 }
+      }}
+      className="bg-white rounded-xl lg:py-16 lg:px-24 p-8"
+    >
       <h2 className="font-bold text-3xl lg:text-4xl text-center mb-10">
         Our Trusted Partners in Education
       </h2>
@@ -21,6 +32,6 @@ export default function Partners() {
           alt="Tesda logo"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }

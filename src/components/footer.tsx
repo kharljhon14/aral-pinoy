@@ -1,8 +1,17 @@
 import { Link } from '@tanstack/react-router';
-
+import { motion } from 'motion/react';
 export default function Footer() {
   return (
-    <footer className="bg-white rounded-xl flex justify-between py-6 px-8 flex-col">
+    <motion.footer
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.4,
+        scale: { type: 'spring', visualDuration: 0.4, bounce: 0.2 }
+      }}
+      className="bg-gradient-to-l from-white to-purple-50 rounded-xl flex justify-between py-6 px-8 flex-col"
+    >
       <div className="flex flex-col lg:flex-row gap-y-8 justify-between mb-12">
         <div className="max-w-md">
           <p className="font-semibold text-xl mb-2">Aral Pinoy</p>
@@ -41,6 +50,6 @@ export default function Footer() {
         <p>&#169; 2025 LearnPH. All rights reserved.</p>
         <p>Crafted with 💙 in the Philippines.</p>
       </div>
-    </footer>
+    </motion.footer>
   );
 }

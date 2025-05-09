@@ -2,12 +2,22 @@ import { Link } from '@tanstack/react-router';
 import { buttonVariants } from './ui/button';
 import { Menu } from 'lucide-react';
 import { useState } from 'react';
+import { motion } from 'motion/react';
 
 export default function Header() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
-    <header className="bg-white rounded-xl flex items-center justify-between py-6 px-8">
+    <motion.header
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.4,
+        scale: { type: 'spring', visualDuration: 0.4, bounce: 0.2 }
+      }}
+      className="bg-gradient-to-r from-white to-purple-100 rounded-xl flex items-center justify-between py-6 px-8"
+    >
       <div className="flex flex-col w-full">
         <div className="flex items-center justify-between">
           <Link
@@ -64,6 +74,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }
