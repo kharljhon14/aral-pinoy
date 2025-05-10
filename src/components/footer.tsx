@@ -14,7 +14,7 @@ export default function Footer() {
     >
       <div className="flex flex-col lg:flex-row gap-y-8 justify-between mb-12">
         <div className="max-w-md">
-          <p className="font-semibold text-xl mb-2">Aral Pinoy</p>
+          <p className="font-lora font-semibold text-xl mb-2">Aral Pinoy</p>
           <p className="text-sm">
             Empowering Filipino learners with modern, inclusive, and accessible education. From
             study guides to interactive classes, Aral Pinoy brings learning.
@@ -47,7 +47,7 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto text-center text-xs text-gray-500">
-        <p>&#169; 2025 LearnPH. All rights reserved.</p>
+        <p>&#169; 2025 Aral Pinoy. All rights reserved.</p>
         <p>Crafted with 💙 in the Philippines.</p>
       </div>
     </motion.footer>

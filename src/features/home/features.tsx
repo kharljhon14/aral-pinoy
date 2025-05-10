@@ -15,7 +15,7 @@ export default function Features() {
         }}
         className="flex flex-col gap-y-6 bg-teal-200 p-12 rounded-2xl"
       >
-        <h3 className="text-3xl">01. Makabago at Masayang Paraan ng Pag-aaral</h3>
+        <h3 className=" text-3xl">01. Makabago at Masayang Paraan ng Pag-aaral</h3>
         <p>
           We blend modern teaching tools with culturally relevant methods so learning feels
           exciting, relatable, and effective—kahit online!

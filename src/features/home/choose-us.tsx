@@ -13,7 +13,7 @@ export default function ChooseUs() {
       }}
       className="bg-gradient-to-tl from-white via-pink-100 to-purple-50 rounded-xl lg:py-16 lg:px-24 p-8"
     >
-      <h2 className="font-bold text-3xl lg:text-5xl mb-6">Why You Should Choose Us</h2>
+      <h2 className="font-lora font-bold text-3xl lg:text-5xl mb-6">Why You Should Choose Us</h2>
       <p className="mb-6">
         We believe in accessible and flexible education for all Filipinos—kahit nasaan ka pa. Our
         platform gives you the freedom to study at your own pace, using resources aligned with DepEd

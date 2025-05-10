@@ -8,20 +8,11 @@ export default function Header() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
-    <motion.header
-      initial={{ opacity: 0, scale: 0 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{
-        duration: 0.4,
-        scale: { type: 'spring', visualDuration: 0.4, bounce: 0.2 }
-      }}
-      className="bg-gradient-to-r from-white to-purple-100 rounded-xl flex items-center justify-between py-6 px-8"
-    >
+    <motion.header className="bg-gradient-to-r from-white to-purple-100 rounded-xl flex items-center justify-between py-6 px-8">
       <div className="flex flex-col w-full">
         <div className="flex items-center justify-between">
           <Link
-            className="text-2xl font-bold"
+            className="font-lora text-2xl font-bold"
             to="/"
           >
             Aral Pinoy
